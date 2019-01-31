@@ -1,0 +1,7 @@
+<h1> <%=@user.user_name %> </h1>
+
+<form action=" <%= user_url(@user) %> " method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Account">
+
+</form>
